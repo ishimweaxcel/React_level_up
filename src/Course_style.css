@@ -1,0 +1,28 @@
+body{
+    background-color: skyblue ;
+}
+.course{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:"side head"
+                        "side content"
+                        "side foot" ;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-columns: 0.1fr 1fr;
+}
+.header {
+    background-color: chocolate;
+    grid-area: head;
+}
+.side{
+    background-color:rgb(232, 219, 40);
+    grid-area: side;
+}
+.content{
+    background-color: brown;
+    grid-area: content;
+}
+.footer{
+    background-color: darksalmon;
+    grid-area: foot
+}
