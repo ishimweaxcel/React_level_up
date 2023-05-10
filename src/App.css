@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body{
+  background-color: skyblue ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.course{
+  height: 100vh;
+  display: grid;
+  grid-template-areas:"side head"
+                      "side replace"
+                      "side foot" ;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-columns: 0.1fr 1fr;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+  grid-area: replace;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-decoration: none;
+  
 }
-
-.App-link {
-  color: #61dafb;
+a{
+  text-decoration: none;
+  color:black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li{
+  list-style: none;
+  padding: 20px;
+  text-decoration: none;
+}
+.header {
+  background-color: chocolate;
+  grid-area: head;
+}
+.side{
+  background-color:rgb(232, 219, 40);
+  grid-area: side;
+}
+.About{
+  background-color: darkkhaki;
+}
+.Home{
+  background-color: cornsilk;
+}
+.Contact{
+  background-color: greenyellow;
+}
+.content{
+  background-color: brown;
+  grid-area: replace;
+}
+.footer{
+  background-color: darksalmon;
+  grid-area: foot
 }

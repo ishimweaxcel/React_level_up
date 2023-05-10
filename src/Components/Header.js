@@ -1,7 +1,14 @@
-let Header  = ()=>{
+import { Link } from "react-router-dom/cjs/react-router-dom";
+
+const Header  = ()=>{
     return(
         <div className="header">
-            <header> hello my names are Ishimwe Axcel</header>
+            
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+            </ul>
         </div>
     );
 }

@@ -1,8 +1,8 @@
 let Content = () =>{
     return(
-        <div className="content">
-            this is Content
-        </div>
+        <main id="replace" className="content">
+             
+        </main>
     );
 }
 export default Content
