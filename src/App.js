@@ -12,7 +12,12 @@ import Content from "../src/Components/Content"
 import Footer from "../src/Components/Footer"
 
 
+
 let App = ()=>{
+    let name="Kanyana"
+    const alerts = ()=>{
+        alert("button clicked");
+    }
     return(
         
         <div className="course">
@@ -24,6 +29,7 @@ let App = ()=>{
             <Switch><Route exact path="/" component={Home}/>
                     <Route path="/about" component={About}/>
                     <Route path="/contact" component={Contact}/>
+                    <Route path="/Side" render={() => <Side name={name} alerts = {alerts}/>}/>
                     </Switch>
             <Footer />
             </Router>
