@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+.container{
+    height: 100vh;
+    background-color: darkkhaki;
+    display: grid;
+    grid-template-areas: "one two";
+    grid-template-columns: 0.2fr 0.8fr;
+}
+.side{
+    background-color: chocolate;
+    grid-area: one;
+}
+.content{
+    background-color: brown;
+    grid-area: two;
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+}
+.top{
+    background-color: burlywood;
+}
+.middle{
+    background-color: darkcyan;
+}

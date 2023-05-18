@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.container{
+    height:100vh;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "uper uper uper uper uper uper uper uper uper uper"
+                         "center0 center0 center0 center0 center0 center0 center0 center0 center0 center0"
+                         "center0 center0 center0 center0 center0 center0 center0 center0 center0 center0"
+                         "center0 center0 center0 center0 center0 center0 center0 center0 center0 center0"
+                         "center0 center0 center0 center0 center0 center0 center0 center0 center0 center0"
+                         "center0 center0 center0 center0 center0 center0 center0 center0 center0 center0"
+                         "center0 center0 center0 center0 center0 center0 center0 center0 center0 center0"
+                         "center0 center0 center0 center0 center0 center0 center0 center0 center0 center0"
+                         "center0 center0 center0 center0 center0 center0 center0 center0 center0 center0"
+                         "down down down down down down down down down down";
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(10,10%);
+
+}
+.up{
+    /* background-color: cadetblue; */
+    grid-area: uper;
+    display: grid;
+    grid-template-areas: "uper1 uper2";
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+}
+.left{
+    grid-area: uper1;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    align-items: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: rgba(228, 73, 16, 0.963);
+    font-size: 40px;
+}
+.right{
+    grid-area: uper2;
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    align-content: right;
+    align-items: right;
+    padding-right: 20px;
+    font-size: 30px;
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.973);
+    font-weight: lighter;
+}
+li{
+    padding: 10px;
+    color: rgba(14, 14, 14, 0.947);
+}
+button{
+    color:white;
+    outline: none;
+    border-color: white;
+    border-radius: 15px;
+    width: 90px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: lighter;
+    background-color: rgba(228, 73, 16, 0.963);
+}
+
+.all{
+     
+
+    background-color: white;
+    grid-area: center0;
+    display: grid;
+    grid-template-areas: "center1 center2"
+                         "center1 center2";
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+.part1{
+    grid-area: center1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: white;
+    background-color: cadetblue;
+    display: flex;
+    /* align-items: center;
+    align-content: center; */
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 25%;
+    height: 50px;
+    font-size: 40px;
+    /* background-color: brown; */
+}
+h2{
+    color: rgb(40, 40, 172);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 40px;
+
+}
+p1{
+    display: flex;
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: rgb(116, 116, 145);
+    font-weight: lighter;
+}
+#button{
+    width: 120px;
+    height: 70px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+.part2{
+    grid-area: center2;
+    background-color: white;
+    display: flex;
+    /* flex-direction: column;
+    align-content: center; */
+    align-items: center;
+    /* justify-content: center; */}
+
+img{
+    width: 100%;
+    clip-path: circle();
+}
+.bottom{
+    grid-area: down;
+    /* background-color: forestgreen; */
+    display: grid;
+    grid-template-areas: "one two three";
+    grid-template-columns: 0.3fr 0.2fr 0.5 fr;
+}
+.One{
+    background-color: white;
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+p3{
+    color: rgba(18, 18, 146, 0.957);
+    padding-bottom: 10px;
+}
+p4{
+    color:  rgb(40, 40, 172);
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.Two{
+    background-color: white;
+    grid-area: two;
+    display: flex;
+    color: rgba(228, 73, 16, 0.963);
+     
+}
+.Three{
+    background-color: white;
+    grid-area: three;
+}

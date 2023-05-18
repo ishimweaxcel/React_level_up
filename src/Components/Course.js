@@ -7,6 +7,7 @@ import Header from "./Header"
 import Side from "./Side"
 import Content from "./Content"
 import Footer from "./Footer"
+import Login from './Login'
 
 
 let Course = ()=>{
