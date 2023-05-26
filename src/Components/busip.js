@@ -1,8 +1,16 @@
+import { BrowserRouter as Router,Route , Switch } from 'react-router-dom/cjs/react-router-dom.min'
+import { Link } from "react-router-dom/cjs/react-router-dom";
 import "../Components/busip.css"
 import Discussion from "../Images/jason-goodman-Oalh2MojUuk-unsplash.jpg"
 import { BsInstagram , BsFacebook, BsTwitter, BsWhatsapp } from "react-icons/bs"
- 
-let busip = ()=>{
+import { BiMenu , BiMessageX } from "react-icons/bi"
+import { useState } from 'react';
+// import Login from './Login';
+// import Wallet from './Wallet';
+
+let Busip = ()=>{
+
+    let [visible, SetVisible] = useState (true);
     return(
         <div className="container">
             <div className="up">
@@ -11,13 +19,23 @@ let busip = ()=>{
                     <header>BUSIP</header>
                 </div>
                 <div className="right">
-                    <ul>
+                    <ul className='please'>
                         <li>Home</li>
                         <li>Event</li>
                         <li>Programs</li>
                         <li>Contact</li>
                         <li><button>Join us</button></li>
                     </ul>
+                    {visible &&<BiMenu className="icons" onClick={() =>{SetVisible(false)}} />}
+                    {!visible &&<BiMessageX className='icons1' onClick={() =>{SetVisible(true)}}/>}
+                    
+                    {!visible && <ul id='responsivePart'>
+                        <li>Home</li>
+                        <li>Event</li>
+                        <li>Programs</li>
+                        <li>Contact</li>
+                        <li><button>Join us</button></li>
+                    </ul>}
                 </div>
                 </div>
             
@@ -58,4 +76,4 @@ let busip = ()=>{
         </div>
     );
 }
-export default busip;
+export default Busip;

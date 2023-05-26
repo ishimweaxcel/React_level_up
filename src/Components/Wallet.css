@@ -4,24 +4,134 @@
 }
 .container{
     height: 100vh;
-    background-color: darkkhaki;
+    /* background-color: darkkhaki; */
     display: grid;
     grid-template-areas: "one two";
     grid-template-columns: 0.2fr 0.8fr;
 }
 .side{
-    background-color: chocolate;
+    background-color: black;
+    color: whitesmoke;
     grid-area: one;
 }
 .content{
-    background-color: brown;
+    background-color: rgb(35, 34, 34);
+    color: whitesmoke;
     grid-area: two;
+
     display: grid;
     grid-template-rows: 0.1fr 0.9fr;
 }
 .top{
-    background-color: burlywood;
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    align-content: right;
+}
+header{
+    padding-left: 10px;
+}
+#list1{
+    padding-left: 10px;
+
+}
+#list2{
+    padding-left: 10px;
+}
+.side-down{
+    padding-left: 10px;
+}
+ul{
+    list-style: none;
+    
+}
+.visa{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.94);
+    width: 50%;
+    padding: 10px;
+    margin-left: 40px;
+    border-radius: 15px;
+}
+.table{
+    /* height: 50%; */
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.94);
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    align-content: right;
+    padding-top: 10px;
+    
+
+}
+#icon {
+    padding-left: 10px;
+}
+#iconia{
+    width: 30px;
+}
+h1{
+    font-size: 20px;
+}
+
+img{
+    width: 30px;
+    clip-path: circle();
 }
 .middle{
-    background-color: darkcyan;
+    margin-top: 29px;
+    background-color: rgb(35, 34, 34);
+}
+table.income-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.income-table th,
+.income-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.income-table th {
+  background-color: #000000;
+}
+
+.header-row {
+  font-weight: bold;
+}
+
+.transaction-id {
+  /* Custom styling for Transaction Id cells */
+}
+
+.customer-name {
+  /* Custom styling for Customer Name cells */
+}
+
+.email-address {
+  /* Custom styling for Email Address cells */
+}
+
+.product {
+  /* Custom styling for Product cells */
+}
+
+.amount {
+  /* Custom styling for Amount cells */
+}
+
+.date {
+  /* Custom styling for Date cells */
 }

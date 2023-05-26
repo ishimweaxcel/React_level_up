@@ -2,7 +2,7 @@ import { BrowserRouter as Router,Route , Switch } from 'react-router-dom/cjs/rea
 
 
 
-import './App.css'
+// import './App.css'
 // import Header from "../src/Components/Header"
 // import Home from "../src/Components/Home"
 // import About from './Components/About'
@@ -10,31 +10,31 @@ import './App.css'
 // import Side from "../src/Components/Side"
 // import Content from "../src/Components/Content"
 // import Footer from "../src/Components/Footer"
- 
-import Login from './Components/Login'
+import Busip from "../src/Components/busip"
+import Login from "../src/Components/Login"
+import Wallet from "../src/Components/Wallet"
 
 
 
 let App = ()=>{
-    // let name="Kanyana"
+    let name="axcel"
     // const alerts = ()=>{
     //     alert("button clicked");
     
     return(
         
-        <div className="course">
-            {/* <Router>
-            <Header />
+        <div className="course-react">
+            {/* <Router> */}
+             
+            <Login name={name} />
+             
+            {/* <Route exact path="/" element={<Busip />}/>
+                    <Route path="/login" element={<Login name={name} />}/>
+                    <Route path="/wallet" element={<Wallet />}/> */}
+                    {/* <Route path="/Side" render={() => <Side name={name} alerts = {alerts}/>}/> */}
+                
             
-            <Side />
-            <Content />
-            <Switch><Route exact path="/" component={Home}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/contact" component={Contact}/>
-                    <Route path="/Side" render={() => <Side name={name} alerts = {alerts}/>}/>
-                    </Switch>
-            <Footer />
-            </Router> */}
+            {/* </Router> */}
         </div>
     );
 }

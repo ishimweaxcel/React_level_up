@@ -46,14 +46,17 @@
     grid-area: uper2;
     background-color: white;
     display: flex;
-    justify-content: right;
-    align-content: right;
-    align-items: right;
+    justify-content: end;
+    /* align-content: right; */
+    align-items: center;
     padding-right: 20px;
     font-size: 30px;
     
 }
-ul{
+.icons, .icons1{
+    display: none;
+}
+.please{
     display: flex;
     list-style: none;
     color: rgba(0, 0, 0, 0.973);
@@ -183,4 +186,20 @@ p4{
 .Three{
     background-color: white;
     grid-area: three;
+}
+.navResponsive{
+    display: none;
+}
+@media only screen and (max-width:560px){
+    .icons, .icons1{
+        display: block;
+    }
+    .please{
+        display: none;
+    } 
+    #responsivePart{
+        display: flex; 
+        /* flex-direction: column; */
+        list-style: none; 
+    }
 }

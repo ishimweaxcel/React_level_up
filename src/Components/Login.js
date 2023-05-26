@@ -5,7 +5,7 @@ import email from "../Images/email.jpg"
 import phone from "../Images/phone.jpg"
 import fax from "../Images/Fax.jpg"
 
-let Login = () => {
+let Login = ({name}) => {
     return(<div className="container">
     <div className="up">
 
@@ -23,7 +23,7 @@ let Login = () => {
    <div className="GetinTouch">
     <header>Get in Touch</header>
     <p>feel free to drop us a line</p>
-    <input type="text" placeholder="enter your name" id="content" required ></input>
+    <input type="text" placeholder="enter your name" id="content" value={name} required ></input>
     <input type="email" placeholder="enter your email" id="content" required></input>
     <input type="text" placeholder="your message" id="content1" required></input>
     <input type="button" value="SEND" id="submit"></input>
@@ -39,7 +39,7 @@ let Login = () => {
 
 export default Login;
 
-<div className="container">
+{/* <div className="container">
             <div className="up">
 
             </div>
@@ -54,4 +54,4 @@ export default Login;
                 </div>
             </div>
 
-        </div>
+        </div> */}
